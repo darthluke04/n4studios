@@ -15,3 +15,4 @@ ver 10/18/23 - Added Blog: Spectron Industries Website.
 ver 11/06/23 - Added sitemap.xml and robots.txt. Added website to search.google.com/search-console. Added Blog: Logo Render, Blog: Spectron Industries Logo Render, Blog: Logo Render Video Eevee, Blog: Computer Simulator
 ver 11/09/23 - Added sitemap2.xml
 ver 11/11/23 - Updated Blog: Spectron Industries Update History
+ver 11/12/23 - Added Computer Simulator
