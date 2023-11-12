@@ -607,12 +607,14 @@
   height: 100vh;
   position: absolute;
   background-color: transparent;
+  resize: both;
 }
 
 .dev-console-inner {
   width: 500px;
   height: 400px;
   background: black;
+  resize: both;
 }
 
 .dev-input-container {
