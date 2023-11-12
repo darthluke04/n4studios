@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Luke Nielsen | Blog</title>
+	<link rel="icon" type="image/x-icon" href="../Assets/N4.png">
+	<!-- Main CSS -->
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<!-- Main JS -->
+	<script src="../script.js"></script>
+	<!-- Blog CSS -->
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- Blog JS -->
+	<script src="script.js"></script>
+
+	<!-- Google Font-Awsome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- JQuery JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body id="body" onload="startJS();">
+	<!-- <div id="backgroundBlur"></div> -->
+
+	<div id="popup" onmouseleave="document.getElementById('popup').style.display = 'none';">
+		<div>
+			<div id="popExit" onclick="document.getElementById('popup').style.display = 'none';">
+				<h4 class="uncolored">X</h4>
+			</div>
+			<div id="popTitle">
+				<p class="uncolored" id="popInnerTitle">Color Land 5 Version Releases</p>
+				<hr>
+			</div>
+			<div id="popContent">
+
+			</div>
+		</div>
+	</div>
+	<div id="menu"></div><br>
+
+	<div class="grid">
+		<div id="content">
+			<!-- Blog / Zig Zag -->
+			<div class="blog">
+
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Computer Simulator</b>
+							<a class="material-symbols-outlined"
+								href="https://darthluke04.github.io/ComputerSimulator/">open_in_new</a>
+							<p><i>November 06, 2023</i>
+							</p>
+							<p>Computer Simulator online, made with HTML5, JS, and CSS!
+							</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/ComputerSimulatorThumbnail.png"
+								onclick="window.location.href='https://opengraph.githubassets.com/3ad49fca0fdcea49b7941cef34f57641926643afec46c0e2da6c87193a913e07/darthluke04/ComputerSimulator'"
+								title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<video muted autoplay loop playsinline>
+							<source src="../Assets/logoRenderVideoEevee.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Logo Render Video Eevee</b>
+							<p><i>November 05, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Rendered Spectron Industries' logo in blender with a pin next to it.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Spectron Industries <br> Logo Render</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/spectronLogoRender.png">open_in_new</a>
+							<p><i>November 05, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Rendered Spectron Industries' logo in blender with a pin next to it.
+							</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/spectronLogoRender.png"
+								onclick="window.location.href='../Assets/blog/spectronLogoRender.png'"
+								title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/logoRender.png" onclick="window.location.href='../Assets/blog/logoRender.png'"
+								title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Logo Render</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/logoRender.png">open_in_new</a>
+							<p><i>November 05, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Rendered my logo in blender with a pin next to it.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Hawaii Trip</b>
+							<a class="material-symbols-outlined" href="HawaiiTrip/">open_in_new</a>
+							<p><i>October 29, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Visited family in hawaii.
+							</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/HawaiiTrip/HawaiiPlane.jpeg"
+								onclick="window.location.href='../Assets/blog/hawaiiplane.jpeg'" title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/SpectronIndustries/SpectronIndustriesWebV101923c.png"
+								onclick="window.location.href='../Assets/blog/SpectronIndustries/SpectronIndustriesWebV101923c.png'"
+								title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Spectron Industries Website</b>
+							<a class="material-symbols-outlined"
+								href="https://spectron-industries.aaronwoodland.repl.co/">open_in_new</a>
+							<p><i>October 17, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Started Spectron Industries Website. <br>Spectron Industries was created by Aaron Woodland.
+							</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Spectron Industries Website`, `<h4 class='uncolored' style='margin-left: 2%;'>Creators:</h4><ul class='uncolored'><li>Luke Nielsen</li><li>Aaron Woodland</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Website Versions:</h4><ul class='uncolored'><li>ver 101723a beta - Created Rows</li><li>ver 101723b beta - Added Placeholder Content</li><li>ver 101823a beta - Added Actual Content</li><li>ver 101823b beta - Made Rows / Content Dynamic (JS)</li><li>ver 101923a beta - Added Nav Bar</li><li>ver 101923b beta - Added Backgound Gradients</li><li>ver 101923c beta - Added Key Navigations</li><li>ver 102023a beta - Fixed Logo</li><li>ver 102023b beta - Added About Us Page</li><li>ver 102023c beta - Fixed menu logo home buttons as well as nav buttons</li><li>ver 102423c beta - Added taser page</li><li>ver 102523c beta - Added all other pages</li><li>ver 110923c beta - Added content to all pages exept electric lighter page.</li><li>ver 110923c beta - <a href='spectronindustries.com'>spectronindustries.com</a> is now the live website. Source code: <a href='https://github.com/darthluke04/SpectronIndustries'>https://github.com/darthluke04/SpectronIndustries</a></li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Nature Walk v2</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/NatureWalks/NatureWalkV2.jpg">open_in_new</a>
+							<p><i>October 12, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Beutifull farm in Hooper, UT.
+							</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/NatureWalks/NatureWalkV2.jpg"
+								onclick="window.location.href='../Assets/blog/NatureWalks/NatureWalkV2.jpg'"
+								title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<video muted autoplay loop playsinline>
+							<source src="../Assets/blog/MotionTracking/portalOnCarpet.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="column right">
+						<div>
+							<b>First Motion Tracking</b>
+							<a class="material-symbols-outlined"
+								href="https://drive.google.com/drive/folders/1BkwKmQXyltKCWEJcsTQPFkZ8Lq2Oy1uv?usp=sharing">open_in_new</a>
+							<p><i>October 11, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created another motion tracking video using blender.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Cashier Tools (STools)
+							</b>
+							<a class="material-symbols-outlined" href="https://stools.nielsen1010041.repl.co">open_in_new</a>
+							<p><i>October 10, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>I created some tools for a cashier.<br>
+								Here is where you can find the Food Calculator, Date Experation Finder, Shift Report Calculator and
+								more.</p>
+							<p class="pillBtn" onclick="window.location.href='https://stools.nielsen1010041.repl.co">View Source Code
+							</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/SToolsFoodCalc.jpeg"
+								onclick="window.location.href='../Assets/blog/SToolsFoodCalc.jpeg'" title="STools Food Calculator">
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">=
+						<video muted autoplay loop playsinline>
+							<source src="../Assets/blog/MotionTracking/motionTracking1.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="column right">
+						<div>
+							<b>First Motion Tracking</b>
+							<a class="material-symbols-outlined"
+								href="https://drive.google.com/drive/folders/1BkwKmQXyltKCWEJcsTQPFkZ8Lq2Oy1uv?usp=sharing">open_in_new</a>
+							<p><i>October 09, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>I created my first motion tracking video using blender.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Nature Walk v1</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/NatureWalks/NatureWalkV1.jpg">open_in_new</a>
+							<p><i>October 01, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Starting these nature walks and I am going to post them every now and then. This one was in Logan, UT
+							</p>
+							<p class="pillBtn" onclick="window.location.href='https://maps.app.goo.gl/wJprJw4akuf4sCMq6'">Open
+								Location</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/NatureWalks/NatureWalkV1.jpg"
+								onclick="window.location.href='../Assets/blog/NatureWalks/NatureWalkV1.jpg'"
+								title="Nature Walk in Logan, UT">
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/BlenderProgress/BlenderProgressThumbnail2023.png"
+								onclick="window.location.href='https://drive.google.com/file/d/1dFCM4FT1xNZ8OiQ3iwwl-gu0Q-xSvd3m/view?usp=sharing'"
+								title="Nature Walk in Hooper, UT">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Blender Progress Video (2023)</b>
+							<a class="material-symbols-outlined"
+								href="https://drive.google.com/file/d/1dFCM4FT1xNZ8OiQ3iwwl-gu0Q-xSvd3m/view?usp=sharing">open_in_new</a>
+							<p><i>September 25, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Started Spectron Industries Website. <br>Spectron Industries was created by Aaron Woodland.
+							</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Blender Progress (2023) Credits`, `<h4 class='uncolored' style='margin-left: 2%;'>Roles:</h4><ul class='uncolored'><li>Director : Luke Nielsen</li><li>Editor : Luke Nielsen</li><li>Sound Design : Luke Nielsen</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Special Thanks To:</h4><ul class='uncolored'><li>PACK TV Crew</li><li>Fredrick Smith</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Attributions / Models:</h4><ul class='uncolored'><li>BMW E34 : Myedsu</li><li>Procedural Asphalt Material : Ryan King Art</li><li>BMW Wheel Model : Lexyc26</li><li>Universal Studios Intro : Alex Bombelli</li><li>Baba O'Riley Intro : The Who - Baba O'Riley</li><li>Pack TV Logo : Parker Anderson</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Music / Sound Effects:</h4><ul class='uncolored'><li>I'm Big : Steve Jablonsky</li><li>The Mighty Rio Grande : This Will Destroy You</li></ul>`); openPopup()">
+								View Credits</p>
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Updated Logo</b>
+							<a class="material-symbols-outlined" href="../Assets/N4StudiosLong.png">open_in_new</a>
+							<p><i>September 20, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created my new logo using Blender (Suprising, I know lol).</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/N4StudiosLong.png"
+								onclick="window.location.href='https://unsplash.com/photos/mcSDtbWXUZU'" title="N4 Studios">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/GlassCups1Liquid.png" title="Glass Cups Render">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Glass Cups Render</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/GlassCups1Liquid.png">open_in_new</a>
+							<p><i>September 19, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Glass Cups Rendered in Cycles using Blender 3.6.</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>AI And Inventing</b>
+							<a class="material-symbols-outlined" href="AIAndInventing/">open_in_new</a>
+							<p><i>September 19, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>My opinion on the growth of AI and Inventions.</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img
+								src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
+								onclick="window.location.href='https://unsplash.com/photos/mcSDtbWXUZU'" title="Unsplash Photo">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<video muted autoplay loop playsinline>
+								<source src="../Assets/blog/CarRender/carRender.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Car Render</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/CarRender/carRender.mp4">open_in_new</a>
+							<p><i>September 19, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>BMW driving on road Rendered using Cycles in Blender 3.6.</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Car Render Attributions`, `<ul class='uncolored'><li>BMW E34 [stance style] : <a href='https://sketchfab.com/3d-models/bmw-e34-stance-style-ffe1a3a1bcb34e0bb80f1aa41c9edb46'>https://sketchfab.com/3d-models/bmw-e34-stance-style-ffe1a3a1bcb34e0bb80f1aa41c9edb46</a> - <a href='https://sketchfab.com/myedsu'>Myedsu</a></li><li>Wheel model : <a href='https://sketchfab.com/3d-models/bbs-lm-93fbcf56ebab4be99f00b8b1246b6010'>https://sketchfab.com/3d-models/bbs-lm-93fbcf56ebab4be99f00b8b1246b6010</a> - <a href='https://sketchfab.com/Lexyc16'>Lexyc16</a></li><li>Procedural Asphalt Material (Blender Tutorial) : <a href='https://www.youtube.com/watch?v=Eofg9SBcdBY&ab_channel=RyanKingArt'>https://www.youtube.com/watch?v=Eofg9SBcdBY&ab_channel=RyanKingArt</a> - <a href='https://www.youtube.com/@RyanKingArt'>Ryan King Art</a></li><br><br><li>Render Time: 10 hrs (2.26 min / frame)</li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Drive Data Recovery</b>
+							<a class="material-symbols-outlined" href="DriveRecovery/">open_in_new</a>
+							<p><i>August 8, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Recovering data of a currupted Windows Vista PC.</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/DriveRecoveryPC.jpg"
+								onclick="window.location.href='../Assets/blog/DriveRecovery'" title="Server PC (Dell Optiplex 3080)">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/ServerPC.png" onclick="window.location.href='../Assets/blog/ServerPC.png'"
+								title="Server PC (Dell Optiplex 3080)">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Ubuntu Server</b>
+							<a class="material-symbols-outlined" href="UbuntuServer/">open_in_new</a>
+							<p><i>July 28, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Using a PC as an Ubuntu Server for local folders.</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Best of Pack TV Updated</b>
+							<a class="material-symbols-outlined" href="../Assets/blog/EndOfYearJosh.mp4">open_in_new</a>
+							<p><i>July 27, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>My classmate Josh Teles was not included in the ending of the video so I added him.</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/BestOfFixed.png"
+								onclick="window.location.href='../Assets/blog/EndOfYearJosh.mp4'"
+								title="Best of Pack TV video in Blender 3D">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<video muted autoplay loop playsinline>
+								<source src="../Assets/blog/BestOfPackTV/BOPTV-final.mp4" type="video/mp4">
+							</video>
+							<!-- <img src="../Assets/blog/BestofEnding.png"
+								onclick="window.location.href='https://www.youtube.com/watch?v=1oGBa0i3orw'"
+								title="End of Best of Pack TV video"> -->
+							<!-- <video controls><source src="../Assets/blog/Finhsed best of.mp4"></video> -->
+							<!-- <iframe src="https://www.youtube.com/embed/1oGBa0i3orw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Blender Best of Pack TV</b>
+							<a class="material-symbols-outlined" href="BestOfPackTV/">open_in_new</a>
+							<p><i>May 15, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Designged the last outro for Pack TV with my classmate Ben Cashin.</p>
+							<p class="pillBtn" onclick="window.location.href='../Assets/blog/BestOfPackTV/BOPTV-final.mp4'">
+								Download Video</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Flag Finder</b>
+							<a class="material-symbols-outlined" href="FlagFinder/">open_in_new</a>
+							<p><i>March 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created a program that searches many files at once to find a string.</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/FlagFinder.png"
+								onclick="window.location.href='https://github.com/darthluke04/Check-files-for-flags'"
+								title="Terminal output for the Flag Finder program">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/Server.jpg"
+								onclick="window.location.href='https://docs.google.com/document/d/1replWSearlQzO06e7TuH3Rt2q_f5dN7yk-KI3crtAOQ/edit?usp=sharing'"
+								title="Image of the four servers">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Server Managment</b>
+							<a class="material-symbols-outlined" href="ServerManagment/">open_in_new</a>
+							<p><i>January 2023 - May 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Troubleshot and setup four servers with two classmates at Weber Innovation Center.</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>TSA Coding Competition</b>
+							<a class="material-symbols-outlined" href="https://space-tour.nielsen101004.repl.co/">open_in_new</a>
+							<p><i>March 15, 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Project Manager for creating a website for the TSA State Competition 2023.</p>
+							<p class="pillBtn"
+								onclick="setPopup(`TSA Coding Competition`, `<h4 class='uncolored' style='margin-left: 2%;'>Creators:</h4><ul class='uncolored'><li>Luke Nielsen : Project Manager</li><li>Carter W : Project Designer</li><li>Natalie K : Head Programmer and Designer</li><li>Aaron W : Content Producer</li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/SpaceTour.png"
+								onclick="window.location.href='https://space-tour.nielsen101004.repl.co/'"
+								title="Image of the Space Tour website">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column right">
+						<div>
+							<b>BYU Cyber Security Competition</b>
+							<!-- <a class="material-symbols-outlined" href="">open_in_new</a> -->
+							<p><i>November 18, 2022</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Competed in the BYU Cyber Security CTF Competition with the Coding Club.</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Coding Club</b>
+							<!-- <a class="material-symbols-outlined" href="">open_in_new</a> -->
+							<p><i>August 2022 - May 2023</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Established Coding Club at Fremont High School with my classmate Corbin Child and Natalie Kemp.</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<video muted autoplay loop playsinline>
+							<source src="../Assets/blog/BeginnersStart.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Beginners Start</b>
+							<a class="material-symbols-outlined" href="BeginnersStart/">open_in_new</a>
+							<p><i>August 9, 2022</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Followed <a href="https://www.youtube.com/@PlugWorld/">PlugWorld's</a> Youtube <a
+									href="https://www.youtube.com/playlist?list=PL6bQeQE-ybqAYoaWz_ZEE2X4wX6PhwCWR">Tutorial</a> to create
+								a 2d wave shooter game using Godot Engine.</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Beginners Start`, `<h4 class='uncolored' style='margin-left: 2%;'>Attributions:</h4><ul class='uncolored'><li>Godot Wave Shooter Tutorial : <a href='https://www.youtube.com/playlist?list=PL6bQeQE-ybqAYoaWz_ZEE2X4wX6PhwCWR'>https://www.youtube.com/playlist?list=PL6bQeQE-ybqAYoaWz_ZEE2X4wX6PhwCWR</a> - <a href='https://www.youtube.com/@PlugWorld'>PlugWorld</a></li></li><li>Sounds Created Using : <a href='https://sfxr.me/'>JSFXR</a></li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Color Land 5 (Godot)</b>
+							<a class="material-symbols-outlined" href="ColorLand5/">open_in_new</a>
+							<p><i>May 31, 2022</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created Color Land 5 as a new version of Color Land 3. This game was created using <a target="_blank"
+									href="https://godotengine.org/">Godot</a> Engine 3.4.</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Color Land 5`, `<h4 class='uncolored' style='margin-left: 2%;'>Version Release Notes:</h4><ul class='uncolored'><li>ver 053122 beta</li><li>ver 060822a beta</li><li>ver 070822a</li><li>ver 081022a</li><li>ver 081323a - Added Level 4</li><li>ver 081423a - Added Commands and Touched up Character Selection</li><li>ver 081423b - Worked on mobile controls</li><li>ver 081423c - Worked on mobile checkpoint codes entering and collision problem on level 3</li><li>ver 081623a - Touched up level 5 and added shrink and grow things</li><li>ver 081723a - Re-Uploaded because some problems and made the mobile controls to update during physics
+												process</li><li>ver 081723b - Fixed Level 3 killer</li><li>ver 081723c - Re-Uploaded because not loading on ALL Browsers</li><li>ver 081723d - Updates Mobile UI When Ready()</li><li>ver 081823a - Updated Mobile UI physics process, added offset to ui, added more commands, added option to
+												change ui offset, added option to enter checkpoint code on mobile version</li><li>ver 081823b - Updated Level 5, 6</li><li>ver 082023a - Added Difficulty</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Original Game Idea: </h4><ul class='uncolored'><li>TR in TANR</li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+					<div class="column right">
+						<video muted autoplay loop playsinline>
+							<source src="../Assets/blog/ColorLand5.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/MatthewsContractingThumb.png"
+								onclick="window.location.href='https://github.com/darthluke04/MatthewsContracting/tree/main'"
+								title="Image of Matthews Contracting Webite">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Matthews Contracting Website</b>
+							<a class="material-symbols-outlined"
+								href="https://github.com/darthluke04/MatthewsContracting/tree/main">open_in_new</a>
+							<p><i>Febuary 11, 2022</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created a contracting website for a class project using PHP, MySQL, Bootstrap, Jquery, HTML, JS, and
+								CSS.<br> Matthews Contracting was designed around the facebook page, Matthews Contracting.</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Space Invaders Remake</b>
+							<a class="material-symbols-outlined"
+								href="https://github.com/darthluke04/MatthewsContracting/tree/main">open_in_new</a>
+							<p><i>January 9, 2022</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created a spin off of Space Invaders using Java. Some of the code was created by Lance P. Rhodes.</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Space Invaders Remake`, `<h4 class='uncolored' style='margin-left: 2%;'>Attributions</h4><ul class='uncolored'><li>Original Game Framework : Lance P. Rhodes</li><li>The Original Space Invaders Arcade : Atari, Inc</li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<video muted autoplay loop playsinline>
+								<source src="../Assets/blog/SpaceInvaders.mp4" type="video/mp4">
+							</video>
+							<!-- <img src="../Assets/blog/MatthewsContractingThumb.png"
+								onclick="window.location.href='https://github.com/darthluke04/MatthewsContracting/tree/main'"
+								title="Image of Matthews Contracting Webite"> -->
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<video muted autoplay loop playsinline>
+								<source src="../Assets/blog/ColorLand4.mp4" type="video/mp4">
+							</video>
+							<!-- <img src="../Assets/blog/MatthewsContractingThumb.png"
+								onclick="window.location.href='https://github.com/darthluke04/MatthewsContracting/tree/main'"
+								title="Image of Matthews Contracting Webite"> -->
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Color Land 4</b>
+							<a target="_blank" class="material-symbols-outlined"
+								href="https://scratch.mit.edu/projects/422580632/">open_in_new</a>
+							<p><i>Febuary 27, 2021</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created Color Land 4 using <a target="_blank" href="scratch.mit.edu">Scratch</a>.</p>
+							<p class="pillBtn"
+								onclick="setPopup(`Color Land 4`, `<h4 class='uncolored' style='margin-left: 2%;'>Creators:</h4><ul class='uncolored'><li>Jace The Mage</li><li>CyberCraft</li><li>Nielsen101004</li><li>Mietron</li><li>TeamTANR</li></ul></ul><h4 class='uncolored' style='margin-left: 2%;'>Original Game Idea: </h4><ul class='uncolored'><li>TR in TANR</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Special Thanks To:</h4><ul class='uncolored'><li>HoppingMadBunny</li><li>SaphiraG3</li><li>Mow</li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>SEMAG Website</b>
+							<a class="material-symbols-outlined" href="https://semag-website.nielsen101004.repl.co/">open_in_new</a>
+							<p><i>Febuary 17, 2021</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Created a website that is a hub for games that you can play on your browser.</p>
+							<p class="pillBtn" onclick="window.location.href='https://replit.com/@nielsen101004/SEMAG-Website?v=1'">
+								View source code</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/SemagWebsite.png"
+								onclick="window.location.href='https://semag-website.nielsen101004.repl.co/'"
+								title="Image of SEMAG Website">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row odd">
+					<div class="column left">
+						<div>
+							<img src="../Assets/blog/ColorLand3.png" title="Image of SEMAG Website">
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<b>Color Land 3</b>
+							<a class="material-symbols-outlined" target="_blank"
+								href="https://scratch.mit.edu/projects/284392803/">open_in_new</a>
+							<p><i>May 9, 2019</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Helped create Color land 3. <a target="_blank" href="https://scratch.mit.edu/projects/279197888/">(New
+									Color Land 2 Alpha)</a></p>
+							<p class="pillBtn"
+								onclick="setPopup(`Color Land 3`, `<h4 class='uncolored' style='margin-left: 2%;'>Creators:</h4><ul class='uncolored'><li>Jace The Mage</li><li>CyberCraft</li><li>Nielsen101004</li><li>Mietron</li><li>TeamTANR</li></ul></ul><h4 class='uncolored' style='margin-left: 2%;'>Original Game Idea: </h4><ul class='uncolored'><li>TR in TANR</li></ul><h4 class='uncolored' style='margin-left: 2%;'>Special Thanks To:</h4><ul class='uncolored'><li>HoppingMadBunny</li><li>SaphiraG3</li><li>Mow</li></ul>`); openPopup()">
+								More Info</p>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+				<div class="row">
+					<div class="column left">
+						<div>
+							<b>Quest Coding Competition</b>
+							<a class="material-symbols-outlined"
+								href="https://studio.code.org/projects/gamelab/JLdzbBfr0IJ_upCM1JpGNjWKq2dgfsBMf8rImhlldQA">open_in_new</a>
+							<p><i>May 14, 2018</i><!-- &mdash; Posted: <i>07/24/23</i> !-->
+							</p>
+							<p>Placed 1st place in the Quest Academy Coding Competition. I used <a
+									href="https://code.org/educate/gamelab">code.org</a> to recreate Pac-Man.</p>
+							<p class="pillBtn"
+								onclick="window.location.href='https://studio.code.org/projects/gamelab/JLdzbBfr0IJ_upCM1JpGNjWKq2dgfsBMf8rImhlldQA/view'">
+								View source code</p>
+						</div>
+					</div>
+					<div class="column right">
+						<div>
+							<img src="../Assets/blog/MocPac.png"
+								onclick="window.location.href='https://studio.code.org/projects/gamelab/JLdzbBfr0IJ_upCM1JpGNjWKq2dgfsBMf8rImhlldQA'"
+								title="Image of Moc Pac">
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<hr><br>
+			</div>
+		</div>
+	</div>
+	<div id="menuIO"></div>
+	<div id="menuI"></div>
+	<div id="menuB"></div>
+	<!-- 
+	<div id="footer">
+		<div>
+			<b>Contact Me</b>
+			<ul>
+				<li><a href="">Youtube</a></li>
+				<li><a href="">Discord</a></li>
+			</ul>
+		</div>
+		<div>
+			<b>Other Links</b>
+			<ul>
+				<li><a href="">Github</a></li>
+				<li><a href="">Replit</a></li>
+			</ul>
+		</div>
+	</div> -->
+</body>
+
+</html>

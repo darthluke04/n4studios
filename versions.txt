@@ -1,0 +1,17 @@
+ver 07/19/23 - Created
+ver 07/26/23 - Added Blog: Best of Pack TV
+ver 07/27/23 - Added Blog: Best of Pack TV Updated
+ver 09/19/23 - Added Blog: AI and Inventing
+ver 10/01/23 - Added Popups, pill buttons, Blog: Nature Walk v1, Blog: Updated Logo. Added Versions.txt, creatorsAndAttributions.txt, bottom menu (footer), Blog: Glass Cups Render
+ver 10/02/23 - Changed a bunch of the pill buttons to be more info wich shows attributions, special thanks, info, and more. Fixed Dark Mode button showing the wrong Icon and title.
+ver 10/08/23 - Added gif background, Blog: Added SpaceX Starlink
+ver 10/09/23 - Added info Btn and info menu
+ver 10/09/23 - Disabled gif background, Removed Blog: Found SpaceX Starlink *Not Relevant*, Added Blender and 3D models btn to info menu.
+ver 10/10/23 - Added Blog: First Motion Tracking, Blog: Cashier Tools (STools)
+ver 10/11/23 - Added Blog: Portal Motion Tracking.
+ver 10/12/23 - Added Blog: Nature Walk v2.
+ver 10/13/23 - Added Gravity Shifts for Minecraft Bedrock. I also added a password for accessing the menu options.
+ver 10/18/23 - Added Blog: Spectron Industries Website.
+ver 11/06/23 - Added sitemap.xml and robots.txt. Added website to search.google.com/search-console. Added Blog: Logo Render, Blog: Spectron Industries Logo Render, Blog: Logo Render Video Eevee, Blog: Computer Simulator
+ver 11/09/23 - Added sitemap2.xml
+ver 11/11/23 - Updated Blog: Spectron Industries Update History

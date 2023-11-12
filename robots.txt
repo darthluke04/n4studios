@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /google5477e34dd64a5a48.html
+
+User-agent: *
+Allow: /
+Disallow: /google5477e34dd64a5a48.html
+
+Sitemap: https://lukenielsen.nielsen1010041.repl.co/sitemap.xml

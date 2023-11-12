@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xmlStyle.css"
+ type="text/css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<div>
+		<h1>https://lukenielsen.nielsen1010041.repl.co/</h1>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/</loc>
+			<created><b>Date Created: </b>07-19-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/HawaiiTrip/</loc>
+			<created><b>Date Created: </b>10-29-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/AIAndInventing/</loc>
+			<created><b>Date Created: </b>09-19-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/DriveRecovery/</loc>
+			<created><b>Date Created: </b>09-19-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/UbuntuServer/</loc>
+			<created><b>Date Created: </b>07-28-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/BestOfPackTV/</loc>
+			<created><b>Date Created: </b>05-15-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/ServerManagment/</loc>
+			<created><b>Date Created: </b>02-10-2023</created>
+		</url>
+		<url>
+			<loc><b>Location: </b>/blog/BeginnersStart/</loc>
+			<created><b>Date Created: </b>08-09-2022</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/blog/ColorLand5/</loc>
+			<created><b>Date Created: </b>05-31-2022</created>
+		</url>
+		<url>
+			<loc><b>Location: </b>/creatorsAndAttributions.txt</loc>
+			<created><b>Date Created: </b>10-01-2023</created>
+		</url>
+		<line></line>
+		<url>
+			<loc><b>Location: </b>/versions.txt</loc>
+			<created><b>Date Created: </b>10-01-2023</created>
+		</url>
+		<line></line>
+	</div>
+</urlset>

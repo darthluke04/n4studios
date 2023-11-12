@@ -1,0 +1,214 @@
+@media only screen and (max-width: 700px) {
+
+	.blog .row {
+		flex-direction: column;
+	}
+
+	.blog .row.odd {
+		flex-direction: column-reverse;
+	}
+
+	.blog .row .column {
+		width: 100%;
+	}
+
+
+	.blog .row .column div:has(img),
+	.blog .row .column div:has(iframe),
+	.blog .row .column div:has(video) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#popup {
+		width: 75%;
+		height: 40%;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+	.blog .row {
+		flex-direction: row;
+	}
+
+	.blog .row .column {
+		width: 48%;
+	}
+
+
+	.blog .left img,
+	.blog .right img,
+	.blog .left video {
+		float: right;
+	}
+
+	.blog .right img,
+	.blog .right img,
+	.blog .right video {
+		float: left;
+	}
+
+	#popup {
+		width: 40%;
+		height: 200px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.content-center {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	#popup {
+		width: 40%;
+		height: 200px;
+	}
+}
+
+@media only screen and (min-width: 801px) {
+	.content-center {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+
+.content-center-img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.noclick {
+	opacity: 15%;
+	pointer-events: none;
+	filter: blur(6px);
+}
+
+.blog .row:not(:has(.right)) {
+	justify-content: center;
+}
+
+.blog .row:not(:has(.right)) div {
+	justify-content: left;
+}
+
+.blog .row:not(:has(.left)) {
+	justify-content: center;
+}
+
+.blog .row:not(:has(.left)) div {
+	justify-content: left;
+}
+
+.blog .row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.blog .row .column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog b {
+	font-size: 3em;
+}
+
+.blog img,
+.blog iframe,
+.blog video {
+	width: 75%;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.blog hr {
+	border-top: 0.1px solid rgba(255, 255, 255, 1);
+	mix-blend-mode: difference;
+}
+
+.blog div {
+	/* border: 1px solid red; */
+}
+
+.blog-short {
+	height: 25em;
+	object-fit: scale-down;
+}
+
+.img-center-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.img-center {
+	width: 20em;
+	/* height: 15em;
+	object-fit: cover;
+	object-position: top; */
+}
+
+.pillBtn {
+	color: black;
+	font-weight: bold;
+	cursor: pointer;
+	width: max-content;
+	padding: 0.25em;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 0.5em;
+	border: 1px solid transparent;
+}
+
+.pillBtn:hover {
+	border: 1px solid grey;
+}
+
+#popup {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 0.75em;
+	color: white;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	display: none;
+	border: 1px solid var(--color);
+}
+
+#popExit {
+	float:right;
+	padding: 2%;
+	margin-right: 3px;
+	cursor: pointer;
+}
+
+#popup hr {
+	width: 95%;
+	border-color: white;
+}
+
+#popup #popTitle {
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#popup #popContent {
+	color: white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#popup::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#popup {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

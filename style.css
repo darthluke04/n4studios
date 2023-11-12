@@ -1,0 +1,474 @@
+:root {
+	--color: black;
+	--infoColor: white;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	overflow: overlay;
+	overflow-x: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+
+	#menu,
+	#menuB {
+		height: 4em;
+	}
+
+	#menuI,
+	#menuIO {
+		height: 20em;
+	}
+
+	#menuIO {
+		bottom: calc(3.9em);
+		margin-left: calc(-50%);
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 701px) {
+
+	#menu,
+	#menuB {
+		height: auto;
+	}
+
+	#menuI,
+	#menuIO {
+		height: auto;
+	}
+
+	#menuIO {
+		bottom: calc(2.2em);
+		margin-left: calc(-25em);
+		width: 25em;
+	}
+}
+
+/* Menu */
+#menu {
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: calc(1.5em + 15px);
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+#menu #menuInner {
+	width: 100%;
+	height: calc(1.5em + 15px);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#menuInner div {
+	display: grid;
+	justify-content: center;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: white;
+	/* color: rgba(0, 0, 0, 0.50);
+	-webkit-text-stroke: 0.5px white; */
+}
+
+#menu b {
+	position: absolute;
+	margin-top: 10px;
+	font-size: 0.75em;
+}
+
+#menuInner div div:hover {
+	color: transparent;
+	-webkit-text-stroke: 0.5px white;
+}
+
+
+/* Menu Bottom */
+#menuB {
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	display: flex;
+	justify-content: space-around;
+}
+
+#menuB #menuBInner {
+	width: 100%;
+	height: calc(3);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#menuBInner div {
+	display: grid;
+	justify-content: center;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: white;
+	/* color: rgba(0, 0, 0, 0.50);
+	-webkit-text-stroke: 0.5px white; */
+}
+
+#menuB b {
+	position: absolute;
+	margin-top: 10px;
+	font-size: 0.75em;
+}
+
+#menuBInner div div:hover {
+	color: transparent;
+	-webkit-text-stroke: 0.5px white;
+}
+
+#menuBIcon {}
+
+
+/* Info Menu */
+#menuI {
+	border-bottom: 3px solid white;
+	transition-duration: 0.75s;
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+	bottom: calc(-20em);
+	position: fixed;
+	width: 25em;
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	padding: 0.25em;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.75em 0.75em 0 0;
+}
+
+#menuI #menuIInner {
+	display: grid;
+	align-items: center;
+	width: 100%;
+}
+
+#menuIInner div {
+	display: flex;
+	/* justify-content: center; */
+	font-size: 1.5em;
+	cursor: pointer;
+	color: white;
+	/* color: rgba(0, 0, 0, 0.50);
+	-webkit-text-stroke: 0.5px white; */
+}
+
+#menuI b {
+	display: flex;
+	align-items: center;
+	font-size: 0.75em;
+	margin-left: 0.5em;
+	color: var(--infoColor);
+}
+
+.menuIItem div {
+	color: var(--infoColor);
+}
+
+.menuIItem:hover {
+	--infoColor: transparent;
+	-webkit-text-stroke: 0.5px white;
+}
+
+#menuIIcon {}
+
+
+/* Info Options Menu */
+#menuIO {
+	border-left: 2px solid white;
+	border-bottom: 3px solid white;
+	transition-duration: 0.75s;
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	padding: 0.25em;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 0.75em 0 0;
+}
+
+#menuIO #menuIOInner {
+	display: grid;
+	align-items: center;
+	width: 100%;
+}
+
+#menuIOInner div {
+	display: flex;
+	/* justify-content: center; */
+	font-size: 1.5em;
+	cursor: pointer;
+	color: white;
+	/* color: rgba(0, 0, 0, 0.50);
+	-webkit-text-stroke: 0.5px white; */
+}
+
+#menuIO b {
+	display: flex;
+	align-items: center;
+	font-size: 0.75em;
+	margin-left: 0.5em;
+	color: var(--infoColor);
+}
+
+.menuIOItem div {
+	color: var(--infoColor);
+}
+
+.menuIOItem:hover {
+	--infoColor: transparent;
+	-webkit-text-stroke: 0.5px white;
+}
+
+#menuIOIcon {}
+
+
+
+/* Footer */
+#footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: calc(1.5em + 15px);
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+#footer div {
+	display: flex;
+}
+
+#footer a {
+	color: #ffffff;
+}
+
+
+#content {
+	margin: 24px;
+}
+
+p:not(.uncolored),
+h1:not(.uncolored),
+h2:not(.uncolored),
+h3:not(.uncolored),
+h4:not(.uncolored),
+h5:not(.uncolored),
+h6:not(.uncolored),
+b:not(.uncolored),
+ul:not(.uncolored),
+a.material-symbols-outlined {
+	color: var(--color);
+}
+
+a.material-symbols-outlined:hover {
+	color: var(--color);
+	text-decoration: none;
+}
+
+
+
+#controls {
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: calc(1.5em + 15px);
+	background-color: rgba(0, 0, 0, 0.50);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+}
+
+#controls #controlsInner {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#controlsInner div {
+	display: grid;
+	justify-content: center;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.50);
+	-webkit-text-stroke: 0.5px white;
+}
+
+#controls b {
+	position: absolute;
+	margin-top: 10px;
+	font-size: 0.75em;
+}
+
+#controlsInner div div:hover {
+	color: #ffffff;
+	-webkit-text-stroke: 0.5px black;
+}
+
+#content {
+	margin: 24px;
+}
+
+p:not(.uncolored),
+h1:not(.uncolored),
+h2:not(.uncolored),
+h3:not(.uncolored),
+h4:not(.uncolored),
+h5:not(.uncolored),
+h6:not(.uncolored),
+b:not(.uncolored),
+i:not(.uncolored),
+ul:not(.uncolored),
+a.material-symbols-outlined {
+	color: var(--color);
+}
+
+a.material-symbols-outlined:hover {
+	color: var(--color);
+	text-decoration: none;
+}
+
+/* ScrollBar https://codepen.io/stephenpaton-tech/full/JjRvGmY */
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+/* * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #878787;
+  } */
+
+/* Chrome, Edge, and Safari */
+/* *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #878787;
+		mix-blend-mode: difference;
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #171717;
+    border-radius: 10px;
+    border: 3px solid #878787;
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+  } */
+
+/* ::-webkit-scrollbar {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #171717;
+	border-radius: 10px;
+	border: 3px solid #878787;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+} */
+
+.disabled {
+	pointer-events: none;
+	-webkit-user-select: none;
+	/* Safari */
+	-ms-user-select: none;
+	/* IE 10 and IE 11 */
+	user-select: none;
+	/* Standard syntax */
+}
+
+.disabled::after {
+	content: "Copyright Protected";
+	position: absolute;
+	width: 100%;
+	height: 390px;
+	backdrop-filter: blur(0.25vw);
+	text-align: center;
+	font-size: 3rem;
+	color: grey;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-align {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.blur-shown {
+	backdrop-filter: blur(80px);
+	-webkit-backdrop-filter: blur(80px);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -100;
+}
+
+.blur-shown-more {
+	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -100;
+}
+
+.blur-hidden {
+	backdrop-filter: blur(0px);
+	-webkit-backdrop-filter: blur(0px);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: -100;
+}

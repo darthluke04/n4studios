@@ -1,0 +1,16 @@
+ver 053122 beta
+ver 060822a beta
+ver 070822a
+ver 081022a
+ver 081323a - Added Level 4
+ver 081423a - Added Commands and Touched up Character Selection
+ver 081423b - Worked on mobile controls
+ver 081423c - Worked on mobile checkpoint codes entering and collision problem on level 3
+ver 081623a - Touched up level 5 and added shrink and grow things
+ver 081723a - Re-Uploaded because some problems and made the mobile controls to update during physics process
+ver 081723b - Fixed Level 3 killer
+ver 081723c - Re-Uploaded because not loading on ALL Browsers
+ver 081723d - Updates Mobile UI When Ready()
+ver 081823a - Updated Mobile UI physics process, added offset to ui, added more commands, added option to change ui offset, added option to enter checkpoint code on mobile version
+ver 081823b - Updated Level 5, 6
+ver 082023a - Added Difficulty
