@@ -557,6 +557,9 @@ function devConsoleInput() {
     document.getElementById("devText").innerHTML += ("<span class='help'>- showDesk() </span><span class='help-more'> -> Shows the desktop shelf</span><br>");
     document.getElementById("devText").innerHTML += ("<span class='help'>- hideDesk() </span><span class='help-more'> -> Hides the desktop shelf</span><br>");
     document.getElementById("devText").innerHTML += ("<span class='help'>- autoHideShelf() </span><span class='help-more'> -> Toggle auto hide shelf</span><br>");
+    document.getElementById("devText").innerHTML += ("<span class='help'>- getBattery() </span><span class='help-more'> -> Gets the current battery status</span><br>");
+    document.getElementById("devText").innerHTML += ("<span class='help'>- devCommand() </span><span class='help-more'> -> Runs the dev command function</span><br>");
+    document.getElementById("devText").innerHTML += ("<span class='help'>- devVar() </span><span class='help-more'> -> Runs the dev var function</span><br>");
   } else if(devInput == "@clear") {
     devConsoleClear();
   } else if(devInput == "@close") {
@@ -607,6 +610,14 @@ function devConsoleInput() {
     devCommand();
   } else if(devInput == "autoHideShelf()") {
     autoHideDesk();
+    devCommand();
+  } else if(devInput == "getBattery()") {
+    hoverMenuBatteryGet();
+    devCommand();
+  } else if(devInput == "devCommand()") {
+    devCommand();
+  } else if(devInput == "devVar()") {
+    devVar();
     devCommand();
   } else if(devInput == "#currentImg") {
     devVar(currentImg);
