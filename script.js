@@ -294,6 +294,10 @@ function setInfoOptions(num, isConfidential) {
 						<div class="material-symbols-outlined">inventory_2</div>
 						<b class="uncolored">Public Blender Files</b>
 					</div>
+					<div onclick="window.location.href='../Assets/Others/Blenders/N4Intro.blend" class="menuIOItem">
+						<div class="material-symbols-outlined">inventory_2</div>
+						<b class="uncolored">Blender intro</b>
+					</div>
 				</div>`
 			);
 			infoOptionsNum = 1;
