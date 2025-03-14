@@ -18,3 +18,4 @@ ver 11/11/23 - Updated Blog: Spectron Industries Update History
 ver 11/12/23 - Added Computer Simulator
 ver 11/16/23 - Updated Blog: Spectron Industries Website
 ver 03/08/25 - Updated Blog: Added 6 Month Mission update, uploaded 360p video and Added 1 Year Update but not video because its not finished.
+ver 03/14/25 - Updated Blog: Added 1 out of 2 Year Mission 360p Video and Updated the 1 out of 2 Year Mission video location
