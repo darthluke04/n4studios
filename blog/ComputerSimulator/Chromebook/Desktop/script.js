@@ -1,7 +1,7 @@
 /* Main javascript (onload Events) */
 function main() {
   setCurrentWallpaper();
-  getCurrentWallpaper();
+  //getCurrentWallpaper();
   menuMore();
   if(true) {
     document.getElementById('settings-user').innerHTML = 'HelloWorld';
@@ -78,33 +78,38 @@ function closeWindowApp() {
     document.getElementById("chrome-iframe").src = "none";
 }
 
-function changeWallpaper(path) {
-    document.getElementById("background").src = "img/" + path;
-    getCurrentWallpaper();
+function changeWallpaper() {
+    var t;
+    if(getCookie("Background"))
+      t = document.getElementById("background").src = getCookie("Background");
+    else // If no cookie use default
+      t = document.getElementById("background").src = "img/defaultWallpaper.jpg"
+    console.log(t);
+    setCurrentWallpaper();
 }
 
 var currentImg = "";
 
-function getCurrentWallpaper(){
-    if(getCookie("background")) {
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
-      console.log("setting background: " + getCookie("background"));
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
+/* function getCurrentWallpaper(){
+    if(getCookie("Background")) {
+      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+      console.log("setting background: " + document.getElementById("background").backgroundImage);
+      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+    } 
+}; */
+
+function setCurrentWallpaper () {
+  if(getCookie("Background")) {
+      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+      console.log("setting background: " + getCookie("Background"));
+      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
     }
     var fullPath = document.getElementById("background").src;
     var filename = fullPath.replace(/^.*[\\\/]/, '');
     document.getElementById("currentImgName").innerHTML = "\"" + filename + "\"";
     document.getElementById("currentImg").src = fullPath;
-    setCurrentWallpaper(filename);
-    setCookie("background", filename, 99999999);
-};
-
-function setCurrentWallpaper () {
-  if(getCookie("background")) {
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
-      console.log("setting background: " + getCookie("background"));
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
-    }
+    //setCurrentWallpaper(filename);
+    setCookie("Background", filename, 99999999);
 }
 
 function svgHover(id){
@@ -208,7 +213,7 @@ function showPreview(event){
     var preview = document.getElementById("background");
     preview.src = src;
     preview.style.display = "block";
-    getCurrentWallpaper();
+    //getCurrentWallpaper();
   }
 }
 
