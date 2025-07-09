@@ -100,6 +100,7 @@ var currentImg = "";
 
 function setCurrentWallpaper () {
   var background = document.getElementById("background");
+  
   if(getCookie("Background")) {
       background.backgroundImage = getCookie("Background");
       console.log("setting background: " + getCookie("Background"));
@@ -116,6 +117,8 @@ function setCurrentWallpaper () {
     document.getElementById("currentImg").src = fullPath;
     //setCurrentWallpaper(filename);
     setCookie("Background", "img/" + filename, 99999999);
+
+    background.src = getCookie("Background");
 }
 
 function svgHover(id){
