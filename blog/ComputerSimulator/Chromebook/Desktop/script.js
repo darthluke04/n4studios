@@ -101,7 +101,7 @@ var currentImg = "";
 function setCurrentWallpaper () {
   var background = document.getElementById("background");
   if(getCookie("Background")) {
-      background.backgroundImage = getCookie("Background"));
+      background.backgroundImage = getCookie("Background");
       console.log("setting background: " + getCookie("Background"));
       background.backgroundImage = getCookie("Background");
     }
