@@ -99,17 +99,23 @@ var currentImg = "";
 }; */
 
 function setCurrentWallpaper () {
+  var background = document.getElementById("background");
   if(getCookie("Background")) {
-      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+      background.backgroundImage = getCookie("Background"));
       console.log("setting background: " + getCookie("Background"));
-      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+      background.backgroundImage = getCookie("Background");
     }
-    var fullPath = document.getElementById("background").src;
+    var fullPath;
+    if(background.backgroundImage)
+      fullPath = background.backgroundImage;
+    else
+      fullPath = background.src;
+  
     var filename = fullPath.replace(/^.*[\\\/]/, '');
     document.getElementById("currentImgName").innerHTML = "\"" + filename + "\"";
     document.getElementById("currentImg").src = fullPath;
     //setCurrentWallpaper(filename);
-    setCookie("Background", filename, 99999999);
+    setCookie("Background", "img/" + filename, 99999999);
 }
 
 function svgHover(id){
