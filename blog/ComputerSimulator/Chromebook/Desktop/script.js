@@ -116,7 +116,10 @@ function setCurrentWallpaper () {
     document.getElementById("currentImgName").innerHTML = "\"" + filename + "\"";
     document.getElementById("currentImg").src = fullPath;
     //setCurrentWallpaper(filename);
-    setCookie("Background", "img/" + filename, 99999999);
+    if(filename)
+      setCookie("Background", "img/" + filename, 99999999);
+    else
+      setCookie("Background", "img/defaultWallpaper.jpg", 99999999);
 
     background.src = getCookie("Background");
 }
