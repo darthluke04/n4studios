@@ -71,6 +71,13 @@
   cursor: pointer;
 }
 
+#searchApps {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  flex-grow: auto;
+}
+
 /* Search Apps Button (Meta action) */
 .searchApps-Closed {
   width: 100vw;
@@ -122,10 +129,35 @@
 
 .searchApps-Center {
   width: 560px;
-  height: 175px;
-  margin-left: calc(50% - 280px);
-  margin-top: 0px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#searchApps-Apps {
+  position: relative;
+  background: green;
+  transition-duration: 0.5s;
+  opacity: 0;
+  height: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: left;
+}
+
+#Apps-Container {
+  --icon-dimension: 100px;
+  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: calc(111% / 5 - var(--icon-dimension));
+  row-gap: calc(111% / 4 - var(--icon-dimension));
+  align-content: flex-start;
+  justify-content: flex-start;
 }
 
 .searchApps-Chrome {
@@ -134,9 +166,11 @@
   background-color: white;
   margin-left: calc(50% - 280px);
   margin-top: 80px;
+  transition-duration: 0.5s;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
 }
-
 
 
 /* Pinned Apps */
@@ -385,12 +419,13 @@
 }
 
 .desktopMenu-More-Options-Dev-Open {
-  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-image: url("img/terminalwhite.svg");
+  background: rgba(0, 0, 0, 0.25) no-repeat center url("img/terminal_35dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.png");
+  background-size: 65%;
+  object-fit: cover;
   margin-left: 300px;
   margin-top: 7.5px;
   transition-duration: 0s;
@@ -562,6 +597,13 @@
   transition-duration: 1s;
 }
 
+.resizable-win {
+  resize: both;
+  min-width: 10vw;
+  min-height: 10vh;
+  overflow-x: hidden;
+}
+
 #calc-app {
   display: none;
   justify-content: center;
@@ -580,9 +622,7 @@
 }
 
 .app-menu {
-  width: calc(500px - 10px);
   height: 20px;
-  position: absolute;
   padding: 5px;
   background-color: white;
 }
@@ -600,37 +640,32 @@
 
 
 .dev-console {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  /* display: flex; */
+  flex-flow: column;
+  width: 40vw;
+  height: 45vh;
+  background: #000000C8;
+  top: calc(50vh - 23vh);
+  left: calc(50vw - 20vw);
   position: absolute;
-  background-color: transparent;
-  resize: both;
-}
-
-.dev-console-inner {
-  width: 500px;
-  height: 400px;
-  background: black;
-  resize: both;
+  display: none;
+  z-index: 1;
+  backdrop-filter: blur(5px);
 }
 
 .dev-input-container {
-  width: 492px;
   height: 30px;
-  margin-top: 362px;
   background-color: rgba(255, 255, 255, 0.125);
   padding: 4px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .dev-input-container input {
-  width: 410px;
+  width: 100%;
   height: 80%;
   border: 1px solid grey;
   border-radius: 6px;
@@ -647,8 +682,9 @@
 }
 
 .dev-text-container {
-  position: absolute;
-  margin-top: 20px;
+  height: 100%;
+  overflow: hidden;
+  overflow-wrap: break-word;
 }
 
 .dev-text-container .help {
@@ -677,9 +713,9 @@
 
 #devText {
   overflow-y: scroll;
-  height: 291px;
-  width: 460px;
-  padding: 20px;
+  margin: 0;
+  height: 100%;
+  padding-left: 10px;
 }
 
 .chromeApp {
@@ -687,34 +723,48 @@
   cursor: pointer;
 }
 
+#app-Chrome {
+  display: none;
+}
+
 .window-App {
   border: 1px solid black;
   width: 100vw;
   height: calc(100vh - var(--menuHeight));
   position: absolute;
-  display: none;
   background-color: white;
+  z-index: 1;
 }
 
-.window-App .window-Chrome {
-  border: 1px solid white;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.window-App-On-Top {
+  z-index: 9;
 }
 
-.window-App .window-Chrome iframe {
+.resizable-win:focus {
+  box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 4.6px;
+}
+
+#app-Chrome-header {
+  background-color: #e0e4ec;
+}
+
+#app-Chrome:focus > #app-Chrome-header {
+  background-color: #d3e3fd;
+}
+
+
+.Chrome-inner iframe {
   width: 100%;
   height: calc(100% - var(--menuHeight));
 }
 
-.window-Chrome-Logo {
+.app-Chrome-Logo {
   width: 272px;
   margin-left: calc(50vw - 136px);
   margin-top: 130px;
 }
 
-.window-Chrome-Input {
+.app-Chrome-Input {
   height: calc(var(--menuHeight) - 12px);
   width: 560px;
   cursor: pointer;
@@ -727,7 +777,7 @@
   font-size: 20px;
 }
 
-.window-Chrome-SearchImg {
+.app-Chrome-SearchImg {
   cursor: pointer;
   transform: translateY(-40px);
   margin-left: calc(50vw - 690px);
@@ -755,6 +805,8 @@
 
 .searchApps-Center-Drag {
   background-color: rgba(0, 0, 0, 0.25);
+  transition-duration: 0.5s;
+  transition-delay: 0.25s;
   border-radius: 50px;
   width: 32px;
   height: 32px;
@@ -855,6 +907,7 @@
   background-color: rgba(255,255,255, 0.9);
   color: gray;
   border: 0.25px solid black;
+  z-index: 1000;
 }
 
 
@@ -1080,4 +1133,12 @@
 
 .settings-connectionsWifi p {
   width: 600px;
+}
+
+
+.icon {
+  width: var(--icon-dimension);
+  height: var(--icon-dimension);
+  background: url("img/Google_Chrome_icon_(September_2014).svg.png");
+  object-fit: fill;
 }

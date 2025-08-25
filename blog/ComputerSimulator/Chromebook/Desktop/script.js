@@ -1,19 +1,24 @@
 /* Main javascript (onload Events) */
+var appChrome;
+
 function main() {
   setCurrentWallpaper();
-  getCurrentWallpaper();
+  dragElement(document.getElementById("devConsole"));
+  dragElement(document.getElementById("app-Chrome"));
   menuMore();
   if(true) {
     document.getElementById('settings-user').innerHTML = 'HelloWorld';
   } else {
     document.getElementById('settings-user').innerHTML = getCookie('Username');
   }
+
+  appChrome = new Chrome();
 }
 
 function menuMore(){
   getDate("desktopMenu-More-Time");
   getBattery();
-  getWifi();
+  //getWifi();
 }
 
 /* DEBUG MODE (.body overflow-x, overflow-y) */
@@ -41,9 +46,9 @@ function deskClick() {
     }
 }
 
-function openApp(app) {
- if(app == "Chrome") {
-   document.getElementById("window-App").style.display = "block";
+function openApp(appId) {
+  var app = document.getElementById(appId).style.display = "flex";
+ if(app == "app-Chrome") {
    document.getElementById("chrome-iframe").src = "https://www.youtube.com/embed/uD4izuDMUQA?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0";
  }
 }
@@ -73,38 +78,57 @@ function closeWallpaper() {
     document.getElementById("settingsWallpaper").style.display = "none";
 }
 
-function closeWindowApp() {
-    document.getElementById("window-App").style.display = "none";
-    document.getElementById("chrome-iframe").src = "none";
+function closeApp(appId) {
+    document.getElementById(appId).style.display = "none";
+    
+    if(appId == "app-Chrome")
+      document.getElementById("chrome-iframe").src = "none";
 }
 
-function changeWallpaper(path) {
-    document.getElementById("background").src = "img/" + path;
-    getCurrentWallpaper();
+function changeWallpaper() {
+    var t;
+    if(getCookie("Background"))
+      t = document.getElementById("background").src = getCookie("Background");
+    else // If no cookie use default
+      t = document.getElementById("background").src = "img/defaultWallpaper.jpg"
+    console.log(t);
+    setCurrentWallpaper();
 }
 
 var currentImg = "";
 
-function getCurrentWallpaper(){
-    if(getCookie("background")) {
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
-      console.log("setting background: " + getCookie("background"));
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
+/* function getCurrentWallpaper(){
+    if(getCookie("Background")) {
+      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+      console.log("setting background: " + document.getElementById("background").backgroundImage);
+      document.getElementById("background").backgroundImage = ("url('Desktop/" + getCookie("Background") + "')");
+    } 
+}; */
+
+function setCurrentWallpaper () {
+  var background = document.getElementById("background");
+  
+  if(getCookie("Background")) {
+      background.backgroundImage = getCookie("Background");
+      console.log("setting background: " + getCookie("Background"));
+      background.backgroundImage = getCookie("Background");
     }
-    var fullPath = document.getElementById("background").src;
+    var fullPath;
+    if(background.backgroundImage)
+      fullPath = background.backgroundImage;
+    else
+      fullPath = background.src;
+  
     var filename = fullPath.replace(/^.*[\\\/]/, '');
     document.getElementById("currentImgName").innerHTML = "\"" + filename + "\"";
     document.getElementById("currentImg").src = fullPath;
-    setCurrentWallpaper(filename);
-    setCookie("background", filename, 99999999);
-};
+    //setCurrentWallpaper(filename);
+    if(filename)
+      setCookie("Background", "img/" + filename, 99999999);
+    else
+      setCookie("Background", "img/defaultWallpaper.jpg", 99999999);
 
-function setCurrentWallpaper () {
-  if(getCookie("background")) {
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
-      console.log("setting background: " + getCookie("background"));
-      document.getElementById("background").backgroundImage = ("url('Desktop/img/" + getCookie("background") + "')");
-    }
+    background.src = getCookie("Background");
 }
 
 function svgHover(id){
@@ -191,11 +215,15 @@ searchApps = false;
 function toggleSearchAppsBig() {
  if(searchApps == false){
    document.getElementById("searchApps").className = "searchApps-More";
-   document.getElementById("searchApps-Center-Drag").src = "img/drag_down.svg";
+   document.getElementById("searchApps-Center-Drag").style.transform = "rotate(180deg)";
+   document.getElementById("searchApps-Chrome").style.marginTop = "20px";
+   document.getElementById("searchApps-Apps").style.opacity = "100";
    searchApps = true;
  } else {
    document.getElementById("searchApps").className = "searchApps-Open";
-   document.getElementById("searchApps-Center-Drag").src = "img/keyboard_arrow_up_white_24dp.svg";
+   document.getElementById("searchApps-Center-Drag").style.transform = "rotate(0deg)";
+   document.getElementById("searchApps-Chrome").style.marginTop = "80px";
+   document.getElementById("searchApps-Apps").style.opacity = "0";
    searchApps = false;
  }
 }
@@ -208,7 +236,7 @@ function showPreview(event){
     var preview = document.getElementById("background");
     preview.src = src;
     preview.style.display = "block";
-    getCurrentWallpaper();
+    //getCurrentWallpaper();
   }
 }
 
@@ -560,6 +588,7 @@ function devConsoleInput() {
     document.getElementById("devText").innerHTML += ("<span class='help'>- getBattery() </span><span class='help-more'> -> Gets the current battery status</span><br>");
     document.getElementById("devText").innerHTML += ("<span class='help'>- devCommand() </span><span class='help-more'> -> Runs the dev command function</span><br>");
     document.getElementById("devText").innerHTML += ("<span class='help'>- devVar() </span><span class='help-more'> -> Runs the dev var function</span><br>");
+    document.getElementById("devText").innerHTML += ("<span class='help'>- dragElement(\"elmtId\") </span><span class='help-more'> -> Tries to make Element Draggable</span><br>");
   } else if(devInput == "@clear") {
     devConsoleClear();
   } else if(devInput == "@close") {
@@ -618,6 +647,12 @@ function devConsoleInput() {
     devCommand();
   } else if(devInput == "devVar()") {
     devVar();
+    devCommand();
+  } else if(devInput.includes("dragElement(")) {
+    const regex = /\("([^"]+)"\)/;
+    let id = devInput.match(regex);
+    console.log(id[1]);
+    dragElement(document.getElementById(id[1]));
     devCommand();
   } else if(devInput == "#currentImg") {
     devVar(currentImg);
@@ -704,4 +739,72 @@ function getCookie(cname) {
     }
   }
   return "";
+}
+
+var dragging = false;
+
+function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    console.log(elmnt.id + "-header")
+    if (document.getElementById(elmnt.id + "-header")) {
+      // if present, the header is where you move the DIV from:
+      document.getElementById(elmnt.id + "-header").onmousedown = dragMouseDown;
+    } // else {
+    //   // otherwise, move the DIV from anywhere inside the DIV:
+    //   elmnt.onmousedown = dragMouseDown;
+    // }
+
+  function dragMouseDown(e) {
+    FocusApp(elmnt);
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    dragging = true;
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+function FocusApp(element) {
+
+  console.log("FocusApp:", element.id);
+
+  var myElement = document.querySelector('.window-App-On-Top');
+
+  if(myElement != null) {
+    myElement.classList.remove("window-App-On-Top");
+  }
+
+  element.classList.add("window-App-On-Top");
+}
+
+function addIcons(num) {
+  for(let i = 1; i <= num; i++) {
+    var icon = document.createElement('div');
+    icon.classList.add("icon");
+
+    document.getElementById("Apps-Container").appendChild(icon);
+  }
 }
