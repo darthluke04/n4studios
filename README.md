@@ -1,21 +1,21 @@
 <h3 align="center">A passionate frontend developer from America</h3>
 
-![](https://komarev.com/ghpvc/?username=darthluke04&label=Profile+Views)
+![](https://komarev.com/ghpvc/?username=n4studios&label=Profile+Views)
 
 <div>
-  <img align="center" width=55% src="https://github-readme-stats.vercel.app/api?username=darthluke04&include_all_commits=true&show_icons=true&hide=issues&count_private=true&theme=onedark&margin-w=15&margin-h=15" />
-  <img align="center" width=40% src="https://github-readme-stats.vercel.app/api/top-langs/?username=darthluke04&layout=compact&langs_count=6&theme=onedark&margin-w=15&margin-h=15" />
+  <img align="center" width=55% src="https://github-readme-stats.vercel.app/api?username=n4studios&include_all_commits=true&show_icons=true&hide=issues&count_private=true&theme=onedark&margin-w=15&margin-h=15" />
+  <img align="center" width=40% src="https://github-readme-stats.vercel.app/api/top-langs/?username=n4studios&layout=compact&langs_count=6&theme=onedark&margin-w=15&margin-h=15" />
 </div>
 
 <br>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy/"><img src="https://github-profile-trophy.vercel.app/?username=darthluke04&theme=onedark&margin-w=15&margin-h=15" alt="darthluke04" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy/"><img src="https://github-profile-trophy.vercel.app/?username=n4studios&theme=onedark&margin-w=15&margin-h=15" alt="n4studios" /></a> </p>
 
 <hr>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://www.youtube.com/@N4-Studios" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="darthluke04" height="30" width="40" /></a>
+<a href="https://www.youtube.com/@N4-Studios" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="n4studios" height="30" width="40" /></a>
 <a href="https://discord.gg/dB3dscz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="dB3dscz" height="30" width="40" /></a>
 </p>
 
@@ -68,10 +68,10 @@
 
 <h3 align="left">Recent Projects / Repositories</h3>
 
-[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=darthluke04&repo=SpectronIndustries&show_owner=false&theme=onedark)](https://github.com/darthluke04/SpectronIndustries)
+[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=n4studios&repo=SpectronIndustries&show_owner=false&theme=onedark)](https://github.com/n4studios/SpectronIndustries)
 
-[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=darthluke04&repo=n4studios&show_owner=false&theme=onedark)](https://github.com/darthluke04/n4studios)
+[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=n4studios&repo=n4studios&show_owner=false&theme=onedark)](https://github.com/n4studios/n4studios)
 
-[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=darthluke04&repo=SEMAG&show_owner=false&theme=onedark)](https://github.com/darthluke04/SEMAG)
+[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=n4studios&repo=SEMAG&show_owner=false&theme=onedark)](https://github.com/n4studios/SEMAG)
 
-[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=darthluke04&repo=Portfolio&show_owner=false&theme=onedark)](https://github.com/darthluke04/Portfolio)
+[![32-bit SoC](https://github-readme-stats.vercel.app/api/pin/?username=n4studios&repo=Portfolio&show_owner=false&theme=onedark)](https://github.com/n4studios/Portfolio)
