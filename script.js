@@ -11,7 +11,7 @@ function startJS() {
 				<!-- <b style="position: absolute; margin-top: 0.1em;">Home</b> -->
 			</div>
 			<div>
-				<div class="material-symbols-outlined" title="Resume" onclick="https://drive.google.com/file/d/1hgOp5jOdh9XoKdoIV063yPfCZl2qg21I/view?usp=drive_link">badge</div>
+				<div class="material-symbols-outlined" title="Resume" onclick="window.location.href='https://drive.google.com/file/d/1hgOp5jOdh9XoKdoIV063yPfCZl2qg21I/view?usp=drive_link'">badge</div>
 				<!-- <b style="position: absolute; margin-top: 0.1em;">Resume</b> -->
 			</div>
 			<div>
